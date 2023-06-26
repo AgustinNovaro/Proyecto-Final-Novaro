@@ -1,0 +1,36 @@
+{% extends 'blog/base.html' %}
+
+{% block header %}
+
+{% load static %}
+
+<header class="masthead" style="background-image: url({% static 'blog/assets/img/about_us.jpg'%})"></header>
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="page-heading">
+                    <h1>{{title}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% endblock header %}
+
+{% block main_content %}
+
+<article class="mb-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <p>Soy Agustín Novaro, nacido en Argentina y actualmente viviendo en la Ciudad de Buenos Aires. Recibido de Licenciado en Sistemas en la UBA y trabajo profesionalmente como Analista Funcional y Consultor SAP para diversos clientes.</p>
+                <p>Mi primer acercamiento con la programación inició con Visual Basic, práctica adquirida durante la cursada de la carrera. Luego comencé a interiorizarme con el lenguaje abap, utilizado para desarrollo de SAP.</p>
+                <p>El objetivo de tomar el curso de Python en Coderhouse es obtener mi primer experiencia como programador y lograr entender nuevas tecnologías para desarrollar potencial profesional.</p>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+{% endblock main_content %}

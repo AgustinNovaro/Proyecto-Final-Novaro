@@ -1,0 +1,32 @@
+{% extends 'blog/base.html' %}
+
+{% block header %}
+
+{% load static %}
+
+<header class="masthead" style="background-image: url({% static 'blog/assets/img/cierresesion.jpg' %})">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="site-heading">
+                    <h1>Has cerrado sesión</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% endblock header %}
+
+{% block main_content %}
+
+<div class="row gx-4 gx-lg-5 justify-content-center">
+    <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="container mt-5">
+            <h2>Se ha cerrado tu sesión.</h2>
+            <p><a href="{% url 'Home' %}">Volver al inicio</a></p>
+        </div>
+    </div>
+</div>
+
+{% endblock main_content %}

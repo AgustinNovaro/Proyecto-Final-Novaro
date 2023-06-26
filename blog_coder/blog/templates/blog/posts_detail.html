@@ -1,0 +1,50 @@
+{% extends 'blog/base.html' %}
+
+{% block header %}
+
+{% load static %}
+
+<header class="masthead" style="background-image: url({% static 'blog/assets/img/post_us.jpg' %})">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="post-heading">
+                    <h1>{{posts.title}}</h1>
+                    <h2 class="subheading">{{posts.subtitle}}</h2>
+                    <span class="meta">
+                        Posteado por {{posts.author}} en {{posts.date}}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% endblock header %}
+
+{% block main_content %}
+
+<article class="mb-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <p>{{posts.body}}</p>
+                {% if posts and posts.image and posts.image.url %}
+                <img src="{{posts.image.url}}" alt="Imagen" width="25%">
+                {% else %}
+                <p><strong>Este posteo no tiene imagen</strong></p>
+                {% endif %}
+                <p></p>
+                {% if request.user.is_authenticated %}
+                <a href="{%url 'Update' posts.id%}" class="btn btn-success">Editar</a>
+                <a href="{%url 'Delete' posts.id%}" class="btn btn-danger">Borrar</a>
+                <a href="{% url 'Posts' %}" class="btn btn-primary">Regresar</a>
+                {% else %}
+                <a href="{% url 'Posts' %}" class="btn btn-primary">Regresar</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</article>
+
+{% endblock main_content %}
