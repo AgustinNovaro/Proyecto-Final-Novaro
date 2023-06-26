@@ -24,5 +24,5 @@ Los mismos se encuentran en el repositorio https://github.com/AgustinNovaro/Proy
 
 ## Video explicativo
 Ingresar al siguiente link para ver el video ("Demo - Proyecto Coderhouse.mp4"): 
-https://drive.google.com/drive/folders/1ukykTy5V39iZJkSAbTDeaT79pQ3e1Rf_?usp=drive_link
+https://drive.google.com/drive/folders/1ukykTy5V39iZJkSAbTDeaT79pQ3e1Rf_?usp=drive_link  
 En el mismo link se adjunta el proyecto en la carpeta "Proyecto Final - Novaro.zip"
