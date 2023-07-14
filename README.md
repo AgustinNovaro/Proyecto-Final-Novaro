@@ -9,7 +9,7 @@
 
 1. Clonar el proyecto.
 2. Instalar las dependencias del proyecto: `pip install -r requirements.txt`.
-3. Ejecutar el comando 'pip install django-widget-tweaks'.
+3. Ejecutar el comando: `pip install django-widget-tweaks`.
 4. Crear las migraciones ejecutando `python manage.py makemigrations` y luego `python manage.py migrate`.
 5. Iniciar la aplicación con `python manage.py runserver`.
 6. Superusuario de prueba: admin, constraseña admin.
